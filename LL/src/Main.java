@@ -14,6 +14,8 @@ public class Main {
         System.out.println(list.DeleteFirst());
         list.Display();
         System.out.println(list.DeleteLast());
+        list.Display();
+        System.out.println(list.DeleteRandom(2));
 
         list.Display();
     }

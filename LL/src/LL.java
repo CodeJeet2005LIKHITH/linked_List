@@ -101,4 +101,15 @@ public class LL {
         return  value;
 
     }
+    public int DeleteRandom(int index){
+        Node temp = head;
+        for(int i=1; i < index;i++){
+            temp = temp.next;
+        }
+        int value = temp.next.value;
+        Node currNext = temp.next.next;
+        temp.next = currNext;
+        return value;
+
+    }
 }
